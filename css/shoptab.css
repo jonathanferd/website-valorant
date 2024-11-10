@@ -1,0 +1,357 @@
+* {margin: 0;padding: 0;}
+
+body {
+    background-color:white;
+    font-family: Arial;
+}
+
+.container {
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+	text-decoration: none;
+    margin-right: 20px;
+    position: relative; 
+}
+nav ul li a{
+	text-decoration: none;
+	color:black;
+}
+
+nav ul li ul {
+	padding-top:20px;
+    display: none;
+    position: absolute;
+	width:150px;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    background-color:white;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    float: none;
+    position: relative;
+    left: 0%;
+}
+
+nav ul li ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px; 
+}
+.pembagian {
+	margin-top:50px;
+	max-width:1000px;
+	display: flex;
+    justify-content: space-between;
+}
+.kiri{
+	width:60%;
+	
+}
+.kiri h1{
+	margin-top:20px;
+}
+.kiri .products button {
+	background:white;
+	border:2px solid black;
+	border-radius: 5px;
+	padding:15px;
+}
+
+.products {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0; 
+}
+
+.products h1 {
+    font-size: 16px; 
+    margin: 0; 
+}
+
+.skins {
+	margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skin {
+    text-align: left;
+    width: calc(33.3% - 15px);
+    margin-bottom: 20px;
+}
+
+.skin img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skin .detail {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skin .detail h2 {
+   font-size:16px;
+}
+
+.skin .star {
+    color: orange;
+}
+.kiri .skins .skin .detail button {
+	margin-top:10px;
+	background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.kiri .tombol {
+	display: flex;
+    justify-content:center;
+	align-items:center;
+	margin-top:10px;
+}
+
+.tombol a {
+  background: white;
+  text-decoration:none;
+  margin-left:5px;
+  margin-right:5px;
+  color:black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.tombol a.current {
+	background:black;
+	color:white;
+}
+
+.kanan{
+	width:30%;
+	display:flex;
+	flex-direction: column;
+    align-items: flex-start;
+}
+.categories {
+	width:100%;
+}
+.categories .kategori {
+	margin-top:30px;
+} 
+
+.categories .kategori p {
+	padding-top:10px;
+	margin-bottom:40px;
+}
+.categories .gambar img {
+	margin-right:10px;
+	width:40px;
+	height:auto;
+	float:left;
+}
+.looking .tombolsearch {
+	margin-top:15px;
+	margin-bottom:40px;
+	display:flex;
+	align-items:center;
+}
+
+.looking .tombolsearch .search {
+	width: 230px;
+	background:white;
+	border:1px solid gray;
+	border-radius: 3px;
+	height: 35px;
+	margin-right:8px;
+}
+
+.looking .tombolsearch .submit {
+	width: 35px;
+	background:black;
+	color:white;
+	border: 2px solid black;
+	border-radius:2px;
+	height: 35px;
+}
+
+.kanan .filterprice img {
+	width:300px;
+	margin-right:130px;
+}
+
+.kanan .filterprice .input1 {
+	margin-right:45px;
+	width:80px;
+	padding:7px;
+	border-radius:3px;
+}
+
+.kanan .filterprice .input2 {
+	margin-left:45px;
+	width:80px;
+	padding:7px;
+	border-radius:3px;
+}
+
+.kanan .follow  {
+	margin-top:30px;
+}
+
+.kanan .follow img {
+	margin-top:20px;
+	width:60px;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+.kanan .follow img:hover {
+	filter: brightness(150%);
+}
+footer {
+	margin-top:100px;
+    text-align: center;
+    padding: 20px 0;
+    background-color:black;
+    color: white;  
+	width: 100%; 
+    position: absolute; 
+}
+
+.footerbagi{
+	display: flex;
+	padding:30px 10px;
+    justify-content: center;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.footerbagi1 {
+    width: 30%;
+    padding: 20px;
+}
+
+.footerbagi2 {
+	flex:1;
+	width: 30%;
+    padding: 20px;
+	flex-direction: column;
+    align-items: center;
+}
+
+.footerbagi3 {
+    width: 30%;
+    padding: 20px;
+}
+
+.footerbagi1 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+
+.footerbagi1 img {
+	width:40px;
+	margin-left:10px;
+	margin-top:20px;
+	
+}
+
+.footerbagi1 img:hover {
+	width:45px;
+}
+.footerbagi2 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+.footerbagi2 p {
+	margin-bottom:20px;
+}
+
+.footerbagi2 .gambar img {
+	width:40px;
+	height:auto;
+	float:left;
+}
+.footerbagi3 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+
+.footerbagi form {
+    display: flex;
+    flex-direction: row;
+	text-align:center;
+	margin-left:50px;
+}
+
+.footerbagi input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.footerbagi3 button {
+	margin-left:5px;
+    background-color: red;
+	width: 100px;
+	height:40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

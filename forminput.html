@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" 
+	content="width=device-width,initial-scale=1.0">
+	<title>FORM</title>
+	<link href="css/forminput.css" rel ="stylesheet" type="text/css">
+</head>
+<body>
+	<form>
+		<div class="itemform row">
+			<div class ="form1">
+				<label for ="namadepan">nama depan</label>
+				<label for = "namalengkap">nama lengkap</label>
+				<label for = "alamatlengkap">alamat</label>
+			</div>
+			<div class ="form2">
+				<input type="text" class="inputtext" id="namadepan"
+				placeholder="nama depan anda" name=""><br>
+				<input type="text" class="inputtext" id="namalengkap"
+				placeholder="nama lengkap anda" name=""><br>
+				<input type="text" class="inputtext" id="alamatlengkap"
+				placeholder="alamat lengkap anda" name="">
+			</div>
+		</div>
+		
+		<br></br>
+		<fieldset>
+		<legend>jenis kelamin</legend>
+		<input type="radio" class="radiocheck" id="idpria" name="gender">
+				<label for="idpria" >pria</label><br>
+			<input type="radio" class="radiocheck" id="idwanita" name="gender">
+				<label for="idwanita">wanita</label><br>
+		</fieldset>
+		
+		<br><br>
+		
+		<fieldset>
+		<legend>kesukaan olah raga</legend>
+		<input type="checkbox" class="radiocheck" id="volley" name="">
+				<label for="volley">bola volley</label><br>
+			<input type="checkbox"  class="radiocheck" id="bola" name="">
+				<label for="bola">sepakbola</label><br>
+			<input type="checkbox"  class="radiocheck" id="tangkis" name="">
+				<label for="tangkis">bulu tangkis</label><br>
+		</fieldset>
+		
+		<br><br>
+		Agama 
+		<select>
+			<option>Islam</option>
+			<option selected="">kristen</option>
+			<option>katolik</option>
+			<option>buddha</option>
+			<option>hindu</option>
+			<option>konghucu</option>
+		</select>
+		
+		<br><br>
+		keterangan
+		<textarea rows="5" cols="60"></textarea>
+		
+		<br><br>
+		<div class="tool">
+		password anda <input type="password" placeholder="password anda"
+		name = "">
+			<div class ="tips">
+				<input type="submit" value="kirim" name=""><span>mengirimkan data inputan</span>
+			</div>
+		<button type="button" onclick="alert('mekakukan registrasi')">sedang apa saya?</button>
+		</div>
+	</form>
+</body>
+</html>

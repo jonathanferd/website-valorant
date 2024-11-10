@@ -1,0 +1,405 @@
+* {margin: 0;padding: 0;}
+
+body {
+    background-color:white;
+    font-family: Arial;
+}
+
+.container {
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right img {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+	text-decoration: none;
+    margin-right: 20px;
+    position: relative;
+}
+nav ul li a{
+	text-decoration: none;
+	color:black;
+}
+
+nav ul li ul {
+	padding-top:20px;
+    display: none;
+    position: absolute;
+	width:150px;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    background-color:white;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+nav ul li ul li {
+    float: none;
+    position: relative;
+    left: 0%;
+}
+
+nav ul li ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px; 
+}
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.main img {
+    width: 1300px;
+    max-width: 100%;
+    height: auto;
+	position: relative;
+	filter: brightness(55%);
+}
+
+.tengah{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	color:white;
+}
+
+.tengah .tengahtext {
+    margin: 10px 0;
+	color:white;	
+}
+.tengah h2{
+	font-size: 17px;
+}
+.tengah button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+	border-radius: 5px;
+}
+
+
+.additional-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.item {
+    text-align: center;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	position: relative;
+}
+
+.item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+	filter: brightness(50%);
+}
+
+.itemtext {
+    text-align: center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	color:white;
+}
+
+.itemtext h2 {
+	font-size: 18px;
+}
+
+.item-text h1, .item-text h2 {
+    margin: 0;
+    padding: 0;
+}
+.products {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0; 
+}
+
+.products h2 {
+    font-size: 24px; 
+    margin: 0; 
+}
+
+.products button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.skins {
+	margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skin {
+    text-align: left;
+    width: calc(33.3% - 40px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.skin img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skin .detail {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skin .star {
+    color: orange;
+
+}
+.skin h2 {
+    font-size:17px;
+}
+
+.info{
+	display: flex;
+    justify-content: space-between;
+}
+
+.info .infotab {
+	width: calc(33.3% - 10px);
+	 text-align: center;
+	 margin: 100px 0 100px 0;
+}
+
+.info .infotab img {
+	width:40px;
+	height:auto;
+}
+.profile {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .profilekiri h1 {
+	color:blue;
+	margin: 10px 0 0 0;
+}
+
+
+.profile button {
+	margin-top:30px;
+	background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.profile .profilekiri{
+	width: calc(49.3% - 10px);
+}
+
+.profile .profilekanan{
+	
+	width: calc(49.3% - 10px);	
+}
+
+.profile img{
+	width: 100%;
+}
+
+.testimony {
+	text-align:center;
+	margin-top: 25px;
+	margin-bottom:35px;
+	width:100%;
+}
+
+.review{
+	display:flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.review .bintang {
+	font-size:20px;
+	color:orange;
+	padding:20px 10px 10px 10px;
+}
+.review img {
+	width:30px;
+	border-radius: 50%;
+	float:left;
+	padding-right:10px;
+}
+
+
+.review .reviewujung {
+	width: calc(28.0%);
+	 line-height: 2; 
+	 padding-bottom:30px;
+}
+
+.review .reviewtengah {
+	background:black;
+	color:white;
+	width: calc(28.0%);
+	 line-height: 2;
+	 border-radius:5px;
+	 padding-left:20px;
+	 padding-bottom:30px;
+}
+
+footer {
+	margin-top:100px;
+    text-align: center;
+    padding: 20px 0;
+    background-color:black;
+    color: white;  
+	width: 100%; 
+    position: absolute; 
+}
+
+.footerbagi{
+	display: flex;
+	padding:30px 10px;
+    justify-content: center;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.footerbagi1 {
+    width: 30%;
+    padding: 20px;
+}
+
+.footerbagi2 {
+	flex:1;
+	width: 30%;
+    padding: 20px;
+	flex-direction: column;
+    align-items: center;
+}
+
+.footerbagi3 {
+    width: 30%;
+    padding: 20px;
+}
+
+.footerbagi1 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+
+.footerbagi1 img {
+	width:40px;
+	margin-left:10px;
+	margin-top:20px;
+	
+}
+
+.footerbagi1 img:hover {
+	width:45px;
+}
+.footerbagi2 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+.footerbagi2 p {
+	margin-bottom:20px;
+}
+
+.footerbagi2 .gambar img {
+	width:40px;
+	height:auto;
+	float:left;
+}
+.footerbagi3 h3 {
+    color: white;
+	margin-bottom:20px;
+    font-size: 20px;
+}
+
+.footerbagi form {
+    display: flex;
+    flex-direction: row;
+	text-align:center;
+	margin-left:50px;
+}
+
+.footerbagi input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.footerbagi3 button {
+	margin-left:5px;
+    background-color: red;
+	width: 100px;
+	height:40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

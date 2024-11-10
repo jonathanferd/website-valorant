@@ -1,0 +1,41 @@
+* {padding: 0; margin: 0}
+
+.container {width: 1000px; margin:auto;}
+
+/* ini css header*/
+header {height: 125px; background:#38ada9; overflow: hidden;}
+header .kiri img{float:left; width: 100px; height: 100px; margin:15px 0 0 35px;}
+header .kanan {float:left; font-size:20px; color:white; margin-top:15px; margin-left: 110px;}
+
+menu {height: 45px;background:silver;margin-bottom:20px;}
+menu ul li {text-decoration: none; color: red; padding:0 35px; list-style: none;
+float:left; border-right:1px solid blue;line-height: 45px;}
+
+menu li:hover {background: #000;color:#ffffff;}
+
+menu li a {text-decoration:none; color:red;}
+menu li a:hover {color:yellow; background:#000; font-size:17px;}
+	
+article {overflow:hidden;}
+article h1 {color:green; margin-bottom:10px; font-size:30px; font-family:gambria;}
+article p {text-align:justify; margin-bottom: 15px;}
+article .kiri {float:left; width:300px;}
+article .kiri .kiritengah {background: #747d8c; padding: 15px;margin-top:30px;}
+article .kiri .kiritengah h1 {color: #fff;}
+article .kiri .kiritengah img{width: 45px;padding: 0 20px 0 0;} 
+article .kiri .kiritengah img:hover {width:52px;padding-right:20px;}
+
+article .kanan{float:right; width:650px;}
+article .kanan .atas img{width: 650px; height:340px;}
+article .kanan .atas p{margin-top: 20px;}
+
+article .kanan .bawah {overflow:hidden;margin-top:45px;}
+article .kanan .bawah .kiribawah {width:315px; float:left;border-left:4px solid blue;}
+article .kanan .bawah .kananbawah{width: 315px; float: right;border-left:4px solid blue;}
+article .kanan .bawah .kananbawah img{width:45px;margin-left:12px}
+article .kanan .bawah h1,p {margin-left:10px;}
+
+footer {background-color: #b33939;color: #ffffff;text-align:center;font-size:15px;
+line-height:40px;height:40px; margin-top:30px;}
+
+footer a{color: #ffffff;}
